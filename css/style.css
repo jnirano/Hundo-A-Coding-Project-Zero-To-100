@@ -4,6 +4,12 @@
    --dark-color: #292929;
    --white-color: #e7e7e7;
 }
+.logoFont{
+   font-family: 'Racing Sans One',
+   cursive;
+   font-weight: 600;
+   font-style: italic;
+}
 
 body{
    color: var(--dark-color);
