@@ -66,14 +66,14 @@
                   <h5>Enter values</h5>
                   <form class="row gy-2 gx-3">
                      <div class="col">
-                        <input type="number" id="startValue" class="form-control" placeholder="Start Value" value="0" aria-label="Start Value">
+                        <input type="number" id="startValue" class="form-control" placeholder="Start Value" value=0 aria-label="Start Value">
                      </div>
                      <div class="col">
-                        <input type="number" id="endValue" class="form-control" placeholder="End Value" value="0" aria-label="End Value">
+                        <input type="number" id="endValue" class="form-control" placeholder="End Value" value=100 aria-label="End Value">
 
                      </div>
                      <div class="col-12 d-flex justify-content-end">
-                        <button type="button" id="btnSubmit" class="btn btn-dark btn-lg"> Display Hundo Numbers
+                        <button id="btnSubmit" type="button" class="btn btn-dark btn-lg"> Display Hundo Numbers
                         </button>
                      </div>
                   </form>
@@ -133,7 +133,13 @@
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
       integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous">
    </script>
+
    <script src="js/hundo.js"></script>
+
+   <script>
+      document.getElementById("btnSubmit").addEventListener("click",getValues);
+   </script>
+
 </body>
 
 </html>
